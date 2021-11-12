@@ -1,6 +1,7 @@
 package models;
 
 import java.sql.Timestamp;
+import java.util.Objects;
 
 public class News {
     private int id;
@@ -57,4 +58,6 @@ public class News {
     public void setContent(String content) {
         this.content = content;
     }
+
+
 }
