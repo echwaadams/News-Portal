@@ -16,4 +16,45 @@ public class News {
         this.content = content;
         this.postdate = postdate;
     }
+    //getters and setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Timestamp getPostdate() {
+        return postdate;
+    }
+
+    public void setPostdate(Timestamp postdate) {
+        this.postdate = postdate;
+    }
+
+    public int getUserid() {
+        return userid;
+    }
+
+    public void setUserid(int userid) {
+        this.userid = userid;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
 }
