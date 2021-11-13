@@ -81,6 +81,12 @@ public class Sql2oNewsDao implements  NewsDao{
                     .executeAndFetchFirst(News.class);
         }
     }
+
+    @Override
+    public DepartmentNews findDepartmentNewsByid(int id) {
+        return null;
+    }
+
     //@Override
     public DepartmentNews findDepartmentNewsById(int id){
         String sql = "SELECT * FROM news WHERE type=:type AND id=:id ";
@@ -104,6 +110,12 @@ public class Sql2oNewsDao implements  NewsDao{
             news.setContent(content);
         }
     }
+
+    @Override
+    public void updateGeneralNews(DepartmentNews dptNews, int userId, String content, int departmentId) {
+
+    }
+
     //@Override
     public void updateDepartmentNews(DepartmentNews dptNews, int userId, String content, int departmentId){
         String sql = "UPDATE news SET (userId, content, departmentId) = (:userId, :content, :departmentId) WHERE id=:id";
@@ -135,6 +147,12 @@ public class Sql2oNewsDao implements  NewsDao{
                     .executeUpdate();
         }
     }
+
+    @Override
+    public void clearDepartmentNews() {
+
+    }
+
     //@Override
     public void clearAllDepartmentNews(){
         String sql = "DELETE FROM news WHERE type=:type";

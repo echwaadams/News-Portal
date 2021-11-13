@@ -50,5 +50,12 @@ public class Department {
     public int hashCode() {
         return Objects.hash(id, name, description);
     }
+
+    public enum DepartmentWithUserCount {}
+
+    public static class DepartmentwithUserCount {
+        public DepartmentwithUserCount(int id, String name, String description, int size) {
+        }
+    }
 }
 

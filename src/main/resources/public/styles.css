@@ -1,13 +1,39 @@
-.np-controls {width:20%;position:fixed;top:0;left:0;height:100%;overflow:auto;background-color: aliceblue;}
-.np-filters {width:20%;position:fixed;top:0;right:0;height:100%;overflow:auto;background-color: antiquewhite;}
-.np-content {width:60%;margin:auto;}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+.np-controls {
+    width:20%;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    overflow:auto;
+    background-color: white;
+    }
+.np-filters {
+    width:20%;
+    position:fixed;
+    top:0;
+    right:0;
+    height:100%;
+    overflow:auto;
+    background-color: white;
+    }
+.np-content {
+    width:60%;
+    margin:auto;
+    }
 
 @media screen and (max-width:500px){
    .np-content{width:100%}
-   .np-controls, .np-filters {display:none;}
+   .np-controls, .np-filters {display:none;
+   }
 }
 
-body { background-color: #EBEFF2; user-select:none;font-family: "Trebuchet MS", Helvetica, sans-serif;}
+body {
+    background-color: lightgrey;
+    user-select:none;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 700;
+    }
 textarea {
    height: auto !important; resize: none;
    border: 0 none white;
@@ -28,9 +54,9 @@ li {list-style-type: none;}
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-   background: #5cb85c;
+   background: white;
    border-radius: 10px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {   background: #5cb85c; }
+::-webkit-scrollbar-thumb:hover {   background: white; }
