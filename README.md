@@ -1,4 +1,4 @@
-**Wildlife Tracker**
+** News Portal**
 
 REST API for querying and retrieving scoped news and information.
 
